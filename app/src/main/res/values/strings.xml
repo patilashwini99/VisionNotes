@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Notes</string>
+    <string name="invalid_login">Invalid login</string>
+    <string name="enter_credentials">Enter credentials</string>
+    <string name="app_logo">App Logo</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="register">Register</string>
+    <string name="login_redirect">Already have an account? Login</string>
+
+    <string name="menu_save">Save</string>
+    <string name="menu_camera">Camera</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_pdf">PDF</string>
+    <string name="menu_edit">Edit</string>
+    <string name="menu_delete">Delete</string>
+    <string name="menu_reminder">Reminder</string>
+
+    <string name="default_web_client_id">990872392442-2hlemttljvkfmuj7okt7nmqidht1jbvv.apps.googleusercontent.com</string>
+</resources>

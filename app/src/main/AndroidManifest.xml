@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.visionnotes">
+
+    <!-- 🔐 Permissions -->
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-feature android:name="android.hardware.camera" android:required="false"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:name=".VisionNotes"
+        android:label="Vision Notes"
+        android:icon="@drawable/notes_logo1"
+        android:roundIcon="@drawable/notes_logo1"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Notes">
+
+        <!-- 🔥 Launcher Activity -->
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true"
+            android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+
+        </activity>
+
+
+        <!-- 🔥 Other Activities -->
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="true"
+            android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar"/>
+
+        <activity android:name=".OtpActivity"/>
+
+        <activity android:name=".PhoneActivity"/>
+
+        <activity
+            android:name=".HomeActivity"
+            android:exported="true"
+            android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar"/>
+
+        <activity
+            android:name=".AddNoteActivity"
+            android:theme="@style/Theme.Notes"/>
+
+        <activity
+            android:name=".SettingsActivity"/>
+
+        <activity android:name=".ForgotPasswordActivity"/>
+
+        <!-- 🔔 Receivers (ONLY ONCE) -->
+        <receiver android:name=".ReminderReceiver"/>
+        <receiver android:name=".SnoozeReceiver"/>
+        <receiver android:name=".MarkDoneReceiver"/>
+
+    </application>
+
+</manifest>

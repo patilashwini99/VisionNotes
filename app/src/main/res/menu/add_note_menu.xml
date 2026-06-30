@@ -1,0 +1,58 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_save"
+        android:icon="@drawable/ic_save"
+        android:title="@string/menu_save"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/menu_camera"
+        android:icon="@drawable/ic_camera"
+        android:title="@string/menu_camera"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/menu_gallery"
+        android:icon="@drawable/ic_gallery"
+        android:title="@string/menu_gallery"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/menu_pdf"
+        android:icon="@drawable/ic_pdf"
+        android:title="@string/menu_pdf"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/menu_edit"
+        android:icon="@drawable/ic_edit"
+        android:title="@string/menu_edit"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/menu_voice"
+        android:title="Voice Note"
+        android:icon="@drawable/ic_mic"
+        app:showAsAction="never"/>
+
+
+    <item
+        android:id="@+id/menu_delete"
+        android:icon="@drawable/ic_delete"
+        android:title="@string/menu_delete"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/menu_reminder"
+        android:icon="@drawable/ic_reminder"
+        android:title="@string/menu_reminder"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/menu_more"
+        android:title="More"
+        app:showAsAction="never"
+        app:icon="@drawable/ic_more_vert" />
+
+</menu>
